@@ -33,7 +33,7 @@ header{
 }
 
 .buscador input{
-    width: 80%;
+    width: 70%;
     border: none;
     background-color: white;
     font-size: 15px; 
@@ -81,54 +81,103 @@ header{
     margin: auto;
 }
 
+figure{
+    margin:auto;
+}
 .banner {
         width: 100%;
         margin:auto
 }
 
-/************************************** Section *******************************/
+/************************************** Main *******************************/
 
 section{
     max-width: 90%;
     margin:auto;
 }
 
-.formulario{
-    margin: 20px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-}
-
-fieldset{
-    width:100%;
-    border: none;
-    margin-bottom: 20px;
-}
-
-.type{
-    width: 100%;
-    border: none;
-    border-radius: 5px;
-    font-size: 17px;
-    padding: 5px;
-    font-family: 'Roboto';
+.producto{
     background-color: white;
+    padding: 5vw;
+    margin-bottom: 10px;
+    position: relative;
+    transition: all .3s ease-in-out;
 }
 
-.enviar{
-    width: 100%;
-    font-size:17px;
-    border-radius: 5px;
+.foto{
+    width: 90%;
+    margin: 5%;
+}
+
+.info{
+    border-top: 1px solid #ebebeb;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+
+.camion{
+    font-size: 16px;
+    color:#39b54a;
+    background-color: white;
+    width: 20px;
+    border: solid #39b54a 1px;
+    border-radius: 50%;
     padding: 5px;
-    margin: 10px 5px;
-    border: 1px solid #1259c3;
-    background-color:#1259c3;
-    color: white;
-    font-family: 'Roboto';
+    position:absolute;
+    right: 20px;
+    bottom: 105px;
+    
 }
 
+.precio{
+    font-size: 1rem;
+    font-weight: bold;
+    width: 30%;
+    
+}
+
+.descuento{
+    font-size: 1rem;
+    text-align: center;
+    color:#39b54a;
+    width: 70%;
+}
+
+.descripcion{
+    font-size:1rem;
+    transition: all .3s ease-in-out;
+    visibility: hidden;
+    
+}
+
+.producto:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    
+}
+
+.producto:hover .descripcion{
+    visibility:visible;
+    
+}
+
+@keyframes delivery {
+    0%{opacity:0%}
+    20%{opacity: 100%; transform: rotateX(360deg);}
+    100%{}
+}
+
+.producto:hover .camion{
+    animation: delivery 1s 1;
+    
+}
+
+h3{
+    font-size: 24px;
+}
 
 /************************************** Footer *******************************/
 
@@ -164,6 +213,7 @@ footer{
     margin-top: 2em;
 }
 
+
 /************************************** tablet *******************************/
 
 @media (min-width:768px){
@@ -185,16 +235,20 @@ footer{
     }
 
     .buscador input{
-        font-size: 20px;     
+        font-size: 20px; 
+        
     }
     
     .buscador button{
-        font-size: 20px; 
+        font-size: 20px;
+        
     }
 
     .compraCuotas{
         max-width: 350px;
         text-align: end;
+        
+
     } 
 
     .main-navbar{
@@ -216,21 +270,27 @@ footer{
         display:none
     }
 
-    .formulario{
-        background: white;
-        border-radius: 5px;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    h3{
+        width: 100%;
+    }
+
+    .producto{
+        width: 25%;
+        margin: 10px;
+        flex-grow: 0.5;
 
     }
 
-    .type{
-        border:1px solid #1259c3;
-        margin-top:10px;
-    }
-
-    fieldset{
-        width:50%;
-        margin:auto;
+    .camion{
+        right: 30px;
+        bottom: 130px;
+        
     }
 
     .main-footer{
@@ -251,13 +311,18 @@ footer{
         max-width: 1200px;
         margin: auto;
     }
+    .producto{
+        width: 10%;
+        margin: 10px;
+        padding: 1vw;
+        flex-grow: 0.25;
+    }
 
-    form{
-        width:50vw;
-        flex-direction: column;
-        align-items: center;
+    .camion{
+        right: 20px;
+        bottom: 100px;
+        
     }
-    fieldset{
-        width:50%;
-    }
+
+
 }
