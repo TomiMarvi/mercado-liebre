@@ -1,0 +1,23 @@
+{
+  "name": "mercado-liebre",
+  "version": "1.0.0",
+  "description": "diseño de ml",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomiMarvi/mercado-liebre.git"
+  },
+  "author": "tomivari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TomiMarvi/mercado-liebre/issues"
+  },
+  "homepage": "https://github.com/TomiMarvi/mercado-liebre#readme"
+}
