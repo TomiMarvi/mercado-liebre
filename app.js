@@ -19,4 +19,5 @@ app.get("/login", (req, res)=>{res.sendFile(path.join(__dirname,"views", "login.
 app.get("/register", (req, res)=>{res.sendFile(path.join(__dirname,"views", "register.html"))});
 
 
-/* Modifique todo porque no podia hacer que el proyecto de github aparezca, despues de varios commits y agregado de el Procfile logre hacerlo */
+/* Modifique todo porque no podia hacer que el proyecto de github aparezca, despues de varios commits y agregado de el Procfile logre hacerlo, no vuelvo a tocar el codigo para que
+aparezca todo sin problema*/
